@@ -25,6 +25,9 @@ hr{
 header{
     padding-top: 50px;
     background-color: #80808060;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 .headerflex{
     display: flex;
@@ -43,6 +46,10 @@ header{
     gap: 30px;
     margin: 0;
 
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
 }
 .navbar ul li{
     align-items: center;
@@ -88,7 +95,7 @@ header{
     color: orange;
 }
 .hero button{
-    background-color: orange;
+    background-color: transparent;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
@@ -96,6 +103,9 @@ header{
     border-radius: 15px;
     border-color: orange;
     margin: 15px;
+}
+.hero button:hover{
+    background-color: #ffa50030;
 }
 .hero button a{
     text-decoration: none;
@@ -185,6 +195,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
+    width: 100%;
 }
 .workingflex{
     margin-left: 20px;
@@ -205,9 +216,12 @@ header{
     border-radius: 20px;
     border: solid orange 1px;
     padding: 20px;
-    background-color: orange;
+    background-color: transparent;
     color: white;
     margin: 10px;
+}
+.workingtext button:hover{
+    background-color: #ffa50030;
 }
 .workingtext button a{
     text-decoration: none;
@@ -243,6 +257,9 @@ header{
 }
 .headerflex img,button{
     align-items: center;
+}
+header{
+    position: static;
 }
 .hero h1{
     font-size: 40px;
