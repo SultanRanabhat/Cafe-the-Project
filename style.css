@@ -166,6 +166,7 @@ header{
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 .feature h1{
     font-size: 40px;
@@ -176,6 +177,60 @@ header{
     justify-content: space-between;
     margin-top: 100px;
 }
+
+/* Working Hours Section*/
+.workingbgimg{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./assets/workingbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.workingflex{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.workingflex hr{
+    margin: 0;
+}
+.workingtext h1{
+    font-size: 60px;
+}
+.workingtext button{
+    border-radius: 20px;
+    border: solid orange 1px;
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    margin: 10px;
+}
+.workingtext button a{
+    text-decoration: none;
+    color: white;
+}
+.time h1{
+    margin-top: 0;
+}
+.time{
+    background-color: black;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,5 +278,18 @@ header{
 }
 .featureflex{
     flex-direction: column;
+}
+.workingflex{
+    flex-direction: column;
+}
+.workingflex h1{
+    font-size: 25px;
+}
+.workingtext{
+    margin-bottom: 50px;
+}
+.workingbgimg{
+    height: 600px;
+    align-items: center;
 }
 }
