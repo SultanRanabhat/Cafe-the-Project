@@ -46,6 +46,7 @@ header{
 }
 .navbar ul li{
     align-items: center;
+    color: white;
 }
 .headerflex button{
     background-color: orange;
@@ -181,10 +182,17 @@ header{
 /* for mobile */
 @media (max-width: 1024px){
 
-    .about{
-    flex-direction: column-reverse;
+.headerflex{
+    flex-direction: column;
+    gap: 30px;
+}
+.headerflex img,button{
     align-items: center;
-    text-align: center;
+}
+.about{
+    flex-direction: column-reverse;
+    align-items:center;
+    text-align:center;
 }
 hr{
     margin: auto;
