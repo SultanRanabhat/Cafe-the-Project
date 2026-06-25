@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+
+/* for all buttons hover */
+button:hover{
+    cursor: pointer;
+    transform: translateY(3%);
+}
+
+/* all Hr tags*/
+hr{
+    width: 80px;
+    border: solid orange 2px;
+}
+
+/* header section */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    padding-top: 50px;
+    background-color: #80808060;
+}
+.headerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerflex img{
+    height: 30px;
+    width: 150px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+
+}
+.navbar ul li{
+    align-items: center;
+}
+.headerflex button{
+    background-color: orange;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border-color: orange;
+}
+.headerflex button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section*/
+.backgroundhero{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./assets/herosec.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 680px;
+
+}
+.hero{
+    /*
+    border: solid white 1px; */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
+.hero h1{
+    font-size: 80px;
+    margin: 0;
+}
+.hero p{
+    color: orange;
+}
+.hero button{
+    background-color: orange;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border-color: orange;
+    margin: 15px;
+}
+.hero button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* About and our team Section*/
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    color: white;
+}
+
+.about img{
+    border-radius: 30px;
+    height: 400px;
+    width: 600px;
+}
+.about hr{
+    margin: 0;
+}
+.about button{
+    border-radius: 20px;
+    border: solid orange 1px;
+    padding: 20px;
+    background-color: orange;
+    color: white;
+}
+.about h1{
+    font-size: 40px;
+}
+
+/* Coffee Menu Section*/
+.coffeemenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    color: white;
+}
+.coffeemenu img{
+    border-radius: 30px;
+    height: 400px;
+    width: 600px;
+}
+.coffeemenu hr{
+    margin: 0;
+}
+.coffeemenu button{
+    border-radius: 20px;
+    border: solid orange 1px;
+    padding: 20px;
+    background-color: orange;
+    color: white;
+}
+.coffeemenu h1{
+    font-size: 40px;
+}
+
+/* Feature Section*/
+.feature{
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.feature h1{
+    font-size: 40px;
+}
+.featureflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+
+/* for mobile */
+@media (max-width: 1024px){
+
+    .about{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+hr{
+    margin: auto;
+}
+.about img{
+    margin-bottom: 40px;
+}
+.coffeemenu{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.coffeemenu img{
+    margin-bottom: 40px;
+}
+.feature{
+    flex-direction: column;
+}
+.featureflex{
+    flex-direction: column;
+}
+}
