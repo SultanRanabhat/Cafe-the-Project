@@ -114,8 +114,8 @@ header{
 
 .about img{
     border-radius: 30px;
-    height: 400px;
     width: 600px;
+    height: auto;
 }
 .about hr{
     margin: 0;
@@ -142,8 +142,8 @@ header{
 }
 .coffeemenu img{
     border-radius: 30px;
-    height: 400px;
     width: 600px;
+    height: auto;
 }
 .coffeemenu hr{
     margin: 0;
@@ -189,24 +189,34 @@ header{
 .headerflex img,button{
     align-items: center;
 }
+.hero h1{
+    font-size: 40px;
+}
 .about{
     flex-direction: column-reverse;
     align-items:center;
     text-align:center;
 }
-hr{
-    margin: auto;
+.about hr{
+    width: 80px;
+    margin: 0 auto;
 }
 .about img{
     margin-bottom: 40px;
+    width: 400px;
 }
 .coffeemenu{
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+.coffeemenu hr{
+    width: 80px;
+    margin: 0 auto;
+}
 .coffeemenu img{
     margin-bottom: 40px;
+    width: 400px;
 }
 .feature{
     flex-direction: column;
