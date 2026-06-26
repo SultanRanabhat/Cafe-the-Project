@@ -236,6 +236,105 @@ header{
     border-radius: 20px;
 }
 
+/* Card section */
+
+.exploretext{
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+}
+.exploretext h1{
+    font-size: 40px;
+}
+.exploretext span{
+    font-size: 20px;
+}
+
+.card img{
+    width: 300px;
+    height: auto;
+}
+.card{
+    background-color: white;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card .dis,.fev{
+    position: absolute;
+}
+.card .dis{
+    top: 15px;
+    right: 15px;
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.card .fev{
+    color: black;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+
+}
+.card .fev,.dis:hover{
+    cursor: pointer;
+}
+.card .fev:hover{
+    color: red;
+}
+.cardflex{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card button{
+    text-align: left;
+    border-radius: 20px;
+    border: solid orange 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+    background-color: transparent;
+    color: white;
+    margin: 5px;
+}
+.card button a{
+    text-decoration: none;
+    color: black;
+}
+.card button:hover{
+    background-color: #ffa50030;
+}
+.rate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.rate p{
+    margin-right: 10px;
+}
+.rate span:hover{
+    color: gold;
+    cursor: pointer;
+}
+
 
 
 
@@ -308,5 +407,13 @@ header{
 .workingbgimg{
     height: 600px;
     align-items: center;
+}
+.cardflex{
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+.card{
+    width: 300px;
 }
 }
