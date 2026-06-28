@@ -23,7 +23,8 @@ hr{
     margin: auto;
 }
 header{
-    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
     background-color: #80808060;
     position: sticky;
     top: 0px;
@@ -467,31 +468,47 @@ header{
 
 
 
-
-
-
-
-
-
-
 /* for mobile */
 @media (max-width: 1024px){
 
 .headerflex{
     flex-direction: column;
     gap: 30px;
+    position: relative;
 }
 .headerflex img,button{
     align-items: center;
 }
 header{
-    position: static;
+    position: sticky;
+}
+.headerflex .headerlogo{
+    position: absolute;
+    left: 0;
+}
+.headerflex .reservationbutton{
+    position: absolute;
+    right: 0;
+}
+.reservationbutton button{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: transparent;
+}
+.navbar ul{
+    margin-top: 60px;
+    font-size: 13px;
 }
 .hero{
     margin: 0;
 }
 .hero h1{
     font-size: 40px;
+}
+.hero .booktablebutton{
+    background-color: orange;
 }
 .about{
     flex-direction: column-reverse;
